@@ -224,7 +224,12 @@
   height:370px;
   width: 100%;
   background-color:  rgb(151, 0, 0);
+  /* background: linear-gradient(to right, #8B0000, #FF0000); */
+
+ 
 }
+
+
 
 .class1{
   height:400px;
@@ -242,20 +247,31 @@
 
 }
 
+input[type='checkbox'] {
+  accent-color: red;
+  margin-bottom: 17px;
+}
+
 .maincon{
   display: flex;
   height: 200px;
   width: 100%;
+  margin-left: 10px;
 }
+
+.fistSEC{
+  width: 400px;
+} 
+
 .picture{
-  width: 200px;
+  width: 250px;
   height: 100%;
   
 }
 .textSection h3{
-  font-size: 23px;
+  font-size: 21px;
     color: rgb(151, 0, 0);
-    font-weight: 800;
+    font-weight: bold;
 }
 .textSection h3:hover{
   color: #000000;
@@ -266,16 +282,32 @@
   
 }
 .textSection p{
-  font-size: 14px;
+  font-size: 12px;
   
 }
 
 
-@media screen and (max-width: 1020px) {
+
+
+@media screen and (max-width: 1024px) {
+.para{
+  color: rgba(0, 0, 0, 0.713);
+  font-size: 13px;
+}
+
+  input[type='checkbox'] {
+    accent-color: red;
+    margin-bottom: 17px;
+  }
+
   .maincon{
   
     height: 150px;
     width: 100%;
+  }
+
+  .fistSEC{
+    width: 400px;
   }
   .picture{
     width: 200px;
@@ -295,22 +327,58 @@
   font-size: 10px;
   
 }
+
+.heading6{
+  margin-top: 10px;
 }
 
-@media screen and (max-width: 320px) {
+/* Basic styling for the container and text */
+.text-with-image {
+  /* max-width: 600px; */
+  background-color: rgb(151, 0, 0);
+  /* margin: 0 auto; */
+  /* padding: 20px; */
+  /* font-size: 100px; */
+  text-align: center;
+}
+
+.text-with-image h1 {
+  position: relative;
+  font-size: 180px;
+}
+
+/* Image text styles */
+.image-text {
+ font-size: 100px;
+  /* Replace with your image path */
+  background-size: contain;
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* For Safari/WebKit browsers */
+  color: transparent;
+  /* font-size: 200px; */
+  font-weight: bold;
+}
+}
+
+@media screen and (max-width: 768px) {
+
+  .fistSEC{
+    width: 300px;
+  }
   .maincon{
-  
+    padding: 10px;
     height: 150px;
     width: 100%;
   }
   .picture{
-    width: 100px;
+    width: 130px;
     height: 100%;
-    
+    /* padding: 10px; */
   }
 
   .textSection h3{
-    font-size: 13px;
+    font-size: 15px;
     color: rgb(151, 0, 0);
     font-weight: 800;
 }
@@ -322,6 +390,278 @@
   font-size: 9px;
   
 }
+
+.maincon p{
+  line-height: 18px;
+  color: gray;
+  font-size: 10px;
 }
 
 
+.para{
+  font-size: 10px;
+  color: #000000;
+}
+
+.heading6{
+  font-size: 12px;
+}
+
+/* Basic styling for the container and text */
+.text-with-image {
+  /* max-width: 600px; */
+  background-color: rgb(151, 0, 0);
+  /* margin: 0 auto; */
+  /* padding: 20px; */
+  /* font-size: 100px; */
+  text-align: center;
+}
+
+.text-with-image h1 {
+  position: relative;
+  font-size: 100px;
+}
+
+/* Image text styles */
+.image-text {
+ font-size: 100px;
+  /* Replace with your image path */
+  background-size: contain;
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* For Safari/WebKit browsers */
+  color: transparent;
+  /* font-size: 200px; */
+  font-weight: bold;
+}
+}
+
+@media screen and (max-width: 500px) {
+
+  input[type='checkbox'] {
+    accent-color: red;
+    margin-bottom: 17px;
+    margin-left: 5px;
+  }
+
+  .fistSEC{
+    width: 400px;
+  }
+  .maincon{
+    padding: 10px;
+    height: 150px;
+    width: 300px;
+  }
+  .picture{
+    width: 100px;
+    height: 100%;
+    /* padding: 10px; */
+  }
+
+  .textSection h3{
+    font-size: 14px;
+    color: rgb(151, 0, 0);
+    font-weight: 800;
+}
+.textSection h6{
+  font-size: 9px;
+  font-weight: bold;
+  
+}
+
+
+.maincon p{
+  line-height: 13px;
+  color: gray;
+  font-size: 10px;
+}
+
+
+.para{
+  font-size: 9px;
+  color: #000000;
+}
+
+.heading6{
+  font-size: 12px;
+  margin-left: 5px;
+}
+}
+
+
+@media screen and (max-width: 375px) {
+
+  .fistSEC{
+    width: 120px;
+  }
+  .maincon{
+    height: 140px;
+    width: 220px;
+  }
+  .picture{
+    /* margin-top: 20px; */
+    width: 80px;
+    height: 100%;
+    
+  }
+
+  .textSection h3{
+    font-size: 10px;
+    color: rgb(151, 0, 0);
+    font-weight: bold;
+}
+.textSection h6{
+  font-size: 7px;
+  line-height: 5px;
+}
+.textSection p{
+  font-size: 11px;
+  
+}
+
+.para{
+  font-size: 8px;
+  color: #000000;
+  
+}
+
+.maincon p{
+  line-height: 10px;
+  color: gray;
+  font-size: 7px;
+}
+
+input[type='checkbox'] {
+  margin-left: 5px;
+  accent-color: red;
+  width: 15px;
+  margin-bottom: 17px;
+
+}
+
+.heading6{
+  font-size: 9px;
+  margin-left: 5px;
+
+}
+
+/* Basic styling for the container and text */
+.text-with-image {
+  /* max-width: 600px; */
+  background-color: rgb(151, 0, 0);
+  /* margin: 0 auto; */
+  /* padding: 20px; */
+  /* font-size: 100px; */
+  text-align: center;
+}
+
+.text-with-image h1 {
+  position: relative;
+  font-size: 70px;
+}
+
+/* Image text styles */
+.image-text {
+ font-size: 100px;
+  /* Replace with your image path */
+  background-size: contain;
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* For Safari/WebKit browsers */
+  color: transparent;
+  /* font-size: 200px; */
+  font-weight: bold;
+}
+}
+
+@media screen and (max-width: 320px) {
+
+  .fistSEC{
+    width: 100px;
+  }
+  .maincon{
+    padding: 0px;
+    height: 140px;
+    width: 195px;
+  }
+  .picture{
+    /* margin-top: 20px; */
+    width: 80px;
+    height: 100%;
+    
+  }
+
+  .textSection{
+    padding-top: 14px;
+  }
+
+  .textSection h3{
+
+    font-size: 11px;
+    color: rgb(151, 0, 0);
+    font-weight: bold;
+}
+.textSection h6{
+  font-size: 7px;
+  line-height:1px;
+}
+.textSection p{
+  font-size: 9px;
+  margin-right: 5px;
+  
+}
+
+.para{
+  font-size: 9px;
+  color: #000000;
+}
+
+.maincon p{
+  line-height: 10px;
+  color: gray;
+  font-size: 7px;
+}
+
+input[type='checkbox'] {
+  margin-left: 5px;
+  accent-color: red;
+  width: 11px;
+  margin-bottom: 17px;
+
+}
+
+.heading6{
+  font-size: 10px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
+
+}
+}
+
+ /* Basic styling for the container and text */
+ .text-with-image {
+  /* max-width: 600px; */
+  background-color: rgb(151, 0, 0);
+  /* margin: 0 auto; */
+  /* padding: 20px; */
+  /* font-size: 100px; */
+  text-align: center;
+}
+
+.text-with-image h1 {
+  position: relative;
+}
+
+/* Image text styles */
+.image-text {
+ font-size: 200px;
+  /* Replace with your image path */
+  background-size: contain;
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* For Safari/WebKit browsers */
+  color: transparent;
+  /* font-size: 200px; */
+  font-weight: bold;
+}
